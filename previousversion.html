@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+<style>
+body {font-family: "Times New Roman", Georgia, Serif;}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display";
+  letter-spacing: 5px;
+}
+#p1,#p2{font-family: "Poppins", sans-serif}
+#i1,#i2,#i3,#i4{
+    width: 231px;
+    border-radius: 50%;
+    height: 229px;
+}
+#whytake{font-family: "Karma", sans-serif}
+#ww0,#ww1,#ww2,#ww3,#ww4{ 
+  min-height: 342px;
+}
+@media (min-width: 993px){
+.w3-col.l3 {
+    width: 20%;
+}
+}
+.w3-bar-block .w3-bar-item {padding:20px}
+</style>
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
+    <a href="#home" class="w3-bar-item w3-button"><img src="./asset/logo1.png" style="width: 100%; height: 60px;"/></a>
+    <!-- Right-sided navbar links. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a href="page2.html" class="w3-bar-item w3-button">About</a>
+      <a href="#event" class="w3-bar-item w3-button">Events</a>
+      <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:500px" id="home">
+  <img class="w3-image" src="/w3images/hamburger.jpg" alt="Hamburger Catering" width="1600" height="800">
+  <div class="w3-display-bottomleft w3-padding-large w3-opacity">
+    <h1 class="w3-xxlarge">Le Catering</h1>
+  </div>
+</header>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:1100px">
+
+  <div class="container">
+    <h2>Carousel Example</h2>  
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+        <li data-target="#myCarousel" data-slide-to="3"></li>
+      </ol>
+  
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner">
+        <div class="item">
+          <img src="asset/pic2.jpg" alt="pic1" style="width:100%;">
+          </div>
+  
+        <div class="item active">
+          <video src="asset/comingsoon.mp4"  style="height: 40%;width: 103%;"autoplay loop muted> </video>
+          <p id="p2"><a href="#event" style="margin-top: 150px;margin-right: 130px !important;"class="w3-button w3-white w3-display-right w3-margin-right w3-round w3-hide-small w3-hover-light-grey">Learn More</a></p>  
+          </div>
+
+        <div class="item">
+          <img src="asset/pic3.jpg" alt="pic2" style="width:100%;">
+        </div>
+      
+        <div class="item">
+          <img src="asset/pic1.jpg" alt="pic3" style="width:100%;">
+        </div>
+      </div>
+  
+      <!-- Left and right controls -->
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- About Section -->
+  <div class="w3-row w3-padding-64" id="whattake">
+    <div class="w3-col m6 w3-padding-large w3-hide-small">
+     <img src="asset/whattake.jpg" class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="600" height="750">
+    </div>
+
+    <div class="w3-col m6 w3-padding-large">
+      <h1 class="w3-center">What Is TAKE Global?</h1><br>
+      <!--<h5 class="w3-center">Tradition since 1889</h5>-->
+      <p class="w3-large">In a time when kingdoms were run with swords, and battles weren't just fought on battlefields but also in the subtle courts of diplomacy, the essence of 64 Skills emerged.
+        Fast forward to today, and our warriors have swapped armor for suits, navigating boardrooms instead of battlefields. Their kingdoms serve as the cozy sanctuaries they call home.        
+        Yet, beneath this modern facade lies a timeless truth: the strategies to conquer today's battles remain unchanged. 
+        Now, as we stand at the brink of a new era, TAKE Global brings this ancient wisdom to life. Our platform is a vibrant space, echoing strategies that have stood the test of centuries.
+         </p>
+      <p class="w3-large w3-text-grey w3-hide-medium"> Join us in our journey to acquire 64 skills and lessons that will transform you into a modern day warrior.</p>
+    </div>
+  </div>
+  
+  <hr>
+  
+  <!-- Menu Section -->
+  <div class="w3-row w3-padding-64" id="ancient">
+    <div class="w3-col l6 w3-padding-large">
+      <h1 class="w3-center">Crafted by Ancient Minds, Tailored for Today's Challenges</h1><br>
+      <!--<h4>Bread Basket</h4>-->
+      <p class="w3-large">64 skills are the silent force behind victories, nurturing conversations, and building a comprehensive life strategy. From royals to thinkers, everyone sought refuge in these skills, weaving them into their very existence.
+      </p><br>
+        </div>
+    
+    <div class="w3-col l6 w3-padding-large">
+      <img src="asset/ancient.jpg" class="w3-round w3-image " alt="Menu" style="width:100%">
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="w3-row w3-padding-64" id="rebirth">
+    <div class="w3-col m6 w3-padding-large w3-hide-small">
+     <img src="asset/rebirth.jpg" class="w3-round w3-image" alt="Table Setting" width="600" height="750">
+    </div>
+
+  <div class="w3-col m6 w3-padding-large">
+    <h1 class="w3-center">The Rebirth of Silent Wisdom</h1><br>
+  <!--<h5 class="w3-center">Tradition since 1889</h5>-->  
+    <p class="w3-large">We're not just a platform; we're a community—a club where like-minded individuals gather online and offline to uncover the path to personal and professional mastery using the silent force of 64 Skills. 
+      Through events, shared experiences, and modern-day wisdom, we make these skills relevant to your contemporary world. Join us, and let's navigate this adventure together.</p>
+  </div>
+</div>
+
+<hr>
+
+<div class="w3-container w3-dark-grey w3-center w3-text-light-grey w3-padding-32" >
+  <div class="w3-container w3-padding-32 w3-center">  
+    <h3 id="whytake">Why Was TAKE Global Born?</h3><br>
+    <img src="asset/whytake.jpg" alt="Me" class="w3-image" style="display:block;margin:auto" width="800" height="533">
+    <div class="w3-padding-32">
+      <p class="w3-large"><b>TAKE Global is the catalyst for the Leaders of Tomorrow. We believe that leadership is a mindset, not just a title. It's about taking responsibility, embracing challenges, and driving positive change. 
+        We stand for individuals who envision leadership beyond positions, who are proactive, resilient, and committed to their personal and professional growth.         
+        Our mission is to empower them with the ancient wisdom of 64 Skills, fostering a community that thrives on leadership in every aspect of life.
+        </b></p>
+    </div>
+  </div>  
+</div>
+
+
+<hr>
+
+<!-- Team Container
+<div class="w3-container w3-padding-64 w3-center" id="team">
+    <h2>OUR TEAM</h2>
+    <p>Meet the team - our office rats:</p>
+    
+    <div class="w3-row"><br>
+    
+   
+    
+    <div class="w3-quarter">
+      <img src="asset/experienceCurator.png" alt="Boss" id ="i2" class="w3-circle w3-hover-opacity">
+      <h3>Mithu Singh</h3>
+      <p>Founder & Experience Curator</p>
+    </div>
+    
+    <div class="w3-quarter">
+      <img src="asset/techMaestro.png" alt="Boss" id ="i3" class="w3-circle w3-hover-opacity">
+      <h3>Jan Ringo</h3>
+      <p>Boss man</p>
+    </div>
+    
+    <div class="w3-quarter">
+      <img src="asset/techMaestro.png" alt="Boss" id ="i4" class="w3-circle w3-hover-opacity">
+      <h3>Kai Ringo</h3>
+      <p>Fixer</p>
+    </div>
+    
+    <div class="w3-quarter">
+      <img src="asset/techMaestro.png" alt="techMaestro" id ="i1" class="w3-hover-opacity">
+      <h3>Pearl</h3>
+      <p>Tech Maestro</p>
+    </div>
+    </div>
+    </div>-->
+
+    <hr>
+
+    <div class="w3-container w3-center" id="event">
+      <video src="asset/Event1.mp4"  style="height: 100%;width: 100%;"autoplay loop muted> </video>
+    </div> 
+    <hr>  
+  <!-- Team Section -->
+<div class="w3-container" style="padding:128px 16px" id="team">
+  <h3 class="w3-center">THE TEAM</h3>
+  <p class="w3-center w3-large">The ones who runs this company</p>
+  <div class="w3-row-padding " style="margin-top:64px">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="asset/experienceCurator.png" alt="experienceCurator" style="width:100%;height: 175px;">
+        <div class="w3-container" id="ww0">
+          <h3>Mithu Singh</h3>
+          <p class="w3-opacity">Founder & Experience Curator</p>
+          <p>Her passion unfolds in crafting unique learning experiences that transcend the ordinary. Join her on this odyssey, where the essence of 64 Skills is not just learned but lived, transforming knowledge into a vibrant adventure</p>
+          <!--<p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>-->
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="asset/techMaestro.png" alt="techMaestro" style="width:100%;height:178px;">
+        <div class="w3-container" id="ww1">
+          <h3>Pearl</h3>
+          <p class="w3-opacity">Tech Maestro</p>
+          <p>Behind the scenes, our Tech Maestro ensures a seamless online experience for our community. From managing the website to orchestrating virtual events, they leverage technology to make the teachings of 64 Skills easily accessible. With a click, they open the doors to a world of timeless strategies.</p>
+         <!--<p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>-->
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="asset/wonder.png" alt="Mike" style="width:100%;height: 175px;">
+        <div class="w3-container" id="ww2">
+          <h3>Wonder Nayal</h3>
+          <p class="w3-opacity">Content Alchemist</p>
+          <p>Content Alchemist transmutes ideas into engaging content.With a skillful touch, they weave intricate tales that unravel the richness of 64 essential skills.a literary masterpiece that not only captivates but also enriches your understanding of timeless strategies.</p>
+          <!--<p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>-->
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="asset/suhas.png" alt="Dan" style="width:100%;height: 175px;">
+        <div class="w3-container" id="ww3">
+          <h3>Suhas Hp</h3>
+          <p class="w3-opacity">The Digital Dynamo</p>
+          <p>Keen eye for digital narratives, Suhas transforms TAKE Global's online space into a captivating journey. He doesn't just drive marketing; he shapes the essence of leadership, ensuring every online interaction is a transformative experience.</p>
+                 </div>
+       </div>
+     </div>
+     <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="asset/gurleen.jpg" alt="Dan" style="width:100%;height: 175px;">
+        <div class="w3-container" id="ww4">
+          <h3>Gurleen Singh</h3>
+          <p class="w3-opacity">The Digital Dynamo</p>
+          <p>Keen eye for digital narratives, Suhas transforms TAKE Global's online space into a captivating journey. He doesn't just drive marketing; he shapes the essence of leadership, ensuring every online interaction is a transformative experience.</p>
+                 </div>
+       </div>
+     </div>
+  </div>
+</div>
+
+
+
+    <hr>
+
+  <!-- Contact Section -->
+  <div class="w3-container w3-padding-64" id="contact">
+    <h1>Contact</h1><br>
+        <p class="w3-text-blue-grey w3-large"><b>Have Questions or Ideas? Feel Free to Reach Out!</b></p>
+    <p>You can  contact us by phone 62907-03200 or through email takeglobalofficial@gmail.com, or you can send us a message here:</p>
+    <form action="process_form.php" method="post" id="contactform" onsubmit="return validateForm()">
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email"></p>
+   <!--<p><input class="w3-input w3-padding-16" type="datetime-local" placeholder="Date and time" required name="date" value="2020-11-16T20:00"></p>-->   
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Query\ Special requirements" required name="Message"></p>
+      <p><button class="w3-button w3-light-grey w3-section" id="submitBtn" type="submit">SEND MESSAGE</button></p>
+    </form>
+  </div>
+  
+<!-- End page content -->
+</div>
+
+
+<!-- Footer -->
+<footer class="w3-container w3-center w3-opacity w3-margin-bottom">
+    <h5>Find Us On</h5>
+    <div class="w3-xlarge w3-padding-16">
+      <!--<i class="fa fa-facebook-official w3-hover-opacity"></i>-->
+     <a href="https://www.instagram.com/takeglobalofficial?igshid=MWFtaXQzMWp2a2EyMw%3D%3D"> <i class="fa fa-instagram w3-hover-opacity"></i></a>
+      <!--<i class="fa fa-snapchat w3-hover-opacity"></i>
+     <i class="fa fa-pinterest-p w3-hover-opacity"></i>-->
+      <!--<i class="fa fa-twitter w3-hover-opacity"></i>-->
+      <a href="https://www.linkedin.com/company/take-global"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+    </div>
+    <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+  </footer>
+<!-- Footer 
+<footer class="w3-center w3-light-grey w3-padding-32">
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>-->
+</body>
+</html>
+<script>
+  function validateForm() {
+    var name = document.forms["contactform"]["Name"].value;
+    var email = document.forms["contactform"]["Email"].value;
+    var message = document.forms["contactform"]["Message"].value;
+
+    // Check if the name is empty
+    if (name == "") {
+      alert("Name must be filled out");
+      return false;
+    }
+
+    // Check if the email is empty or not a valid email format
+    if (email == "") {
+      alert("Email must be filled out");
+      return false;
+    } else {
+      var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!email.match(emailRegex)) {
+        swal("Info", "Enter a valid email", "info");
+        return false;
+      }
+    }
+
+    // Check if the message is empty
+    if (message == "") {
+      alert("Message must be filled out");
+      return false;
+    }
+
+    // If all validations pass, submit the form using AJAX
+    submitForm(name, email, message);
+
+    // Prevent the default form submission
+    return false;
+  }
+
+  function submitForm(name, email, message) {
+    // Using jQuery for AJAX request
+    $.ajax({
+      type: 'POST',
+      url: 'process_form.php',
+      data: {
+        Name: name,
+        Email: email,
+        Message: message
+      },
+      dataType: 'json',
+      success: function(response) {
+        if (response.status === 'success') {
+          // Show success sweet alert
+          swal("Success", response.message, "success");
+            // Reset the form fields after successful submission
+          document.forms["contactform"].reset();
+        } else {
+          // Show error sweet alert
+          swal("Error", response.message, "error");
+        }
+      },
+      error: function(xhr, status, error) {
+        // Show error sweet alert if AJAX request fails
+        swal("Error", "Failed to submit the form", "error");
+      }
+    });
+  }
+
+  
+</script>
+
+  
